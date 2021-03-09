@@ -1,19 +1,25 @@
-const Case = "Hello";
+const useCase = "Hello";
 
 function shout(Case) {
     return Case.toUpperCase();
 }
+shout(useCase);
 function whisper(Case) {
     return Case.toLowerCase();
 }
+whisper(useCase);
+
 function logShout(Case) {
     const spy = Case.toUpperCase();
     console.log(spy);
 }
+logShout(useCase);
+
 function logWhisper(Case) {
     const spy = Case.toLowerCase();
     console.log(spy);
 }
+logWhisper(useCase);
 
 function sayHiToGrandma(Case){
 if(Case === "hello"){
@@ -24,4 +30,5 @@ if(Case === "hello"){
     return "I love you, too."
 }
 }
+sayHiToGrandma(useCase);
 
