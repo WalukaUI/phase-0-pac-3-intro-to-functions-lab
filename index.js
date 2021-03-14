@@ -22,9 +22,9 @@ function logWhisper(Case) {
 logWhisper(useCase);
 
 function sayHiToGrandma(Case){
-if(Case === "hello"){
+if(Case.toLowerCase() === Case){
     return "I can't hear you!" 
-}else if (Case === "HELLO"){
+}else if (Case.toUpperCase() === Case){
     return "YES INDEED!"
 }else if(Case === "I love you, Grandma."){
     return "I love you, too."
